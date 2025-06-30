@@ -47,7 +47,7 @@ Kalamkari is a centuries-old form of hand-painted or block-printed textile art. 
 
 📍 Future Enhancements
 
-Enable saving/loading user sessions
+Enable saving/loading user sessions,
 Offer preloaded Kalamkari templates
 
 ### License

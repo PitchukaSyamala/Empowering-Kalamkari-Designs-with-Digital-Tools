@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Kalamkari Art</title>
+    <link rel="stylesheet" href="css/styles1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="images/p5.png" alt="Kalamkari Art Banner">
+        </div>
+        <section class="form-section">
+            <h2>Register</h2>
+            <form action="/register" method="POST">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Register</button>
+            </form>
+            <!-- Add a link to redirect to login page -->
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </section>
+    </div>
+</body>
+</html>

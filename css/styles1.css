@@ -1,0 +1,93 @@
+/* Reset and Basic Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Banner Styling */
+.banner img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Limit height for better visibility */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow for better contrast */
+}
+
+/* Form Section Styling */
+.form-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #8A4B2D; /* Kalamkari color */
+    margin-bottom: 20px;
+}
+
+/* Form Elements Styling */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8A4B2D; /* Kalamkari color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #6F3921; /* Darker brown on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner img {
+        max-height: 200px; /* Adjust banner height on smaller screens */
+    }
+
+    .form-section {
+        padding: 15px;
+    }
+
+    form input, form button {
+        font-size: 1rem;
+    }
+}

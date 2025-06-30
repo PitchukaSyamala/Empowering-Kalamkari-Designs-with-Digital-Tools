@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalamkari Brush Tool</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      background: #fffaf5;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #8B0000;
+      margin-bottom: 15px;
+    }
+
+    .controls {
+      margin: 15px 0;
+    }
+
+    input[type="file"],
+    input[type="color"],
+    button {
+      margin: 10px;
+      padding: 10px 18px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #a16b43;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #864e2b;
+    }
+
+    canvas {
+      border: 2px solid #aaa;
+      margin-top: 20px;
+      touch-action: none;
+    }
+
+    @media (max-width: 600px) {
+      canvas {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Paint Your Kalamkari Design</h1>
+
+  <div class="controls">
+  <input type="file" id="uploadInput" accept="image/*">
+  <input type="color" id="colorPicker" value="#ff0000">
+  <label for="brushSize">Brush Size:</label>
+  <input type="range" id="brushSize" min="2" max="50" value="8">
+  <button onclick="toggleEraser()">Toggle Eraser</button>
+  <button onclick="downloadImage()">Download</button>
+  <button onclick="clearCanvas()">Clear</button>
+</div>
+
+
+  <canvas id="canvas" width="600" height="600"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>

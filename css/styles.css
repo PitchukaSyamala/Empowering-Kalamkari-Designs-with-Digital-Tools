@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: brown; /* Vibrant brown color */
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+section.buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+section.buttons .btn {
+    display: inline-block;
+    color: #fff; /* White text */
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 2em;
+    text-decoration: none;
+    padding: 20px 40px;
+    margin: 15px;
+    border-radius: 50px; /* Rounded corners for flower-like effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+section.buttons .login-btn {
+    background-color: #a67c52; /* Light brown for Login button */
+    width: auto;
+    height: auto;
+    padding: 18px 50px;
+    border: 2px solid #8b5c42; /* Darker brown border */
+    font-size: 1.5em;
+}
+
+section.buttons .register-btn {
+    background-color: #a67c52; /* A slightly different shade of brown for Register button */
+    width: auto;
+    height: auto;
+    padding: 18px 50px;
+    border: 2px solid #9e5b38; /* Darker brown border */
+    font-size: 1.5em;
+}
+
+section.buttons .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Kalamkari Templates Section */
+.template-gallery {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.template-gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1em;
+}
